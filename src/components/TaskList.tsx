@@ -31,6 +31,23 @@ export function TaskList() {
 
   function handleToggleTaskCompletion(id: number) {
 
+
+
+    /*
+            //modo  com map 
+            
+        const newTasks = tasks.map(task => task.id === id ? {
+          ...task,
+          isComplete: !task.isComplete
+    
+    
+        } : task);
+    
+        setTasks(newTasks); */
+
+
+    // modo com for 
+
     const muda = [...tasks];
 
     for (let i = 0; i < tasks.length; i++) {
